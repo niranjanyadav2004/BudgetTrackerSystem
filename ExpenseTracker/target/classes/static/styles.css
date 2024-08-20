@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+ 
+
+
+.nav{
+  margin-left: 25%;
+}
+
+.nav-item{
+  display: flex;
+  background-color: rgb(113, 170, 220);
+  width: 100%;
+  margin-bottom: 7%;
+}
+
+label {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  padding-right: 10px;
+}
+
+select {
+  font-size: 1rem;
+  padding: 2px 9px;
+  width: 100%;
+}
+
+
+
+.add-page{
+  display: flex;  
+}
+
+.all-expenses{
+  width: 45%;
+}
+
+
+
+/* --------------- */
+
+.expense {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 5px ;
+  box-shadow: 2px 2px 5px grey;
+  cursor: pointer;
+}
+
+.expense:hover{
+  transform: scale(1.05);
+}
+
+

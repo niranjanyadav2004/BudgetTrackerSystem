@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Expense</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+        <div class="nav-item" >
+            <h5 style="margin-top: 0.7%; margin-left: 0.8%;">Expense Tracker</h5>
+            <nav class="nav">
+				<a class="nav-link text-dark" href="index.html"><h4>DashBoard</h4></a>
+				<a class="nav-link text-dark" href="expense.html"><h4>Expense</h4></a>
+				<a class="nav-link text-dark" href="Income.html"><h4>Income</h4></a>
+            </nav>
+        </div>
+    
+    
+        <div class="add-page">
+
+            <div class="row" style="width: 50%;">
+                <div class="col-md-6 offset-md-3">
+                    <h2>Add New Expense</h2>
+                    <form id="expense-form">
+                        <input type="hidden" id="expenseId">
+                        <div class="form-group">
+                            <label for="expenseName">Title</label>
+                            <input type="text" class="form-control" id="expenseTitle" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expenseAmount">Amount</label>
+                            <input type="number" class="form-control" id="expenseAmount" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expenseName">Description</label>
+                            <input type="text" class="form-control" id="expenseDescription" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Category</label><br>
+                            <select name="category" id="category">
+                                <option value="">--Category--</option>
+								<option value="Grocery">Grocery</option>
+                                <option value="Salary">Salary</option>
+                                <option value="Freelancing">Freelancing</option>
+                                <option value="Investments">Investments</option>
+                                <option value="Stocks">Stocks</option>
+                                <option value="Bank Transfer">Bank Transfer</option>
+                                <option value="Business">Business</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="expenseDate">Date</label>
+                            <input type="date" class="form-control" id="expenseDate" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Expense</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="all-expenses" id="allExp">
+                
+            </div>
+    
+           
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scriptExpense.js"></script>
+</body>
+</html>
